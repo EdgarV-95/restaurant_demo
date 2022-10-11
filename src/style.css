@@ -39,11 +39,11 @@ body {
     gap: 2.5vw;
 }
 
-.menu {
+.home, .aboutUs, .menu, .delivery, .blog, .contact {
     cursor: pointer;
 }
 
-.menu:hover {
+.home:hover, .aboutUs:hover, .menu:hover, .delivery:hover, .blog:hover, .contact:hover {
     border-bottom: 2px solid black;
 }
 
