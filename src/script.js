@@ -19,7 +19,7 @@ mainDiv.innerHTML =
         <div class="mobile-nr">Reservation: +44 1234567890</div>
     </div>
     <div class="main-content">
-        <p class="welcome-txt">Welcome to <span class="name">Ailleen's kitchen</span></p>
+        <p class="welcome-txt">Welcome to Ailleen's kitchen</p>
         <h1 class="main-txt">Great Filipino Food</h1>
         <p class="bla-bla">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean congue sapien eu augue tempus, nec bibendum metus gravida.</p>
         <button class="menu-btn">Order Now</button>

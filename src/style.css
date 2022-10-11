@@ -61,16 +61,15 @@ body {
     align-items: center;
     flex-direction: column;
     gap: 4.5vh;
-    padding-top: 15vh;
+    padding-top: 12vh;
     font-size: 3vh;
 }
 
-.name {
+.welcome-txt, .main-txt, .bla-bla {
     background-color: goldenrod;
     border-radius: 4vw;
     padding: 1vh;
     font-weight: bold;
-    font-size: 3vh;
 }
 
 .menu-btn {
