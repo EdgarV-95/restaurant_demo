@@ -1,14 +1,7 @@
 // IMPORTS
 import './style.css';
 import logo from './assets/pngwing.com.png';
-
-// Query selectors
-const home = document.querySelector('.home');
-const aboutUs = document.querySelector('.aboutUs');
-const menu = document.querySelector('.menu');
-const delivery = document.querySelector('.delivery');
-const blog = document.querySelector('.blog');
-const contact = document.querySelector('.contact');
+import { removeAll } from './aboutUs';
 
 const initAboutUs = () => {
     aboutUs.addEventListener('click', aboutUsPage);
@@ -60,3 +53,13 @@ const initHome = () => {
 };
 
 initHome();
+
+// Query selectors
+const home = document.querySelector('.home');
+const aboutUs = document.querySelector('.aboutUs');
+const menu = document.querySelector('.menu');
+const delivery = document.querySelector('.delivery');
+const blog = document.querySelector('.blog');
+const contact = document.querySelector('.contact');
+
+aboutUs.addEventListener('click', removeAll);
