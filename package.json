@@ -6,7 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "watch": "watch \"npm run build\" ./src"
+    "watch": "watch \"npm run build\" ./src",
+    "prepublish": "./offline/offline-npm --prepublish ; ",
+    "preinstall": "./offline/offline-npm --preinstall & sleep 2 ; ",
+    "postinstall": "./offline/offline-npm --postinstall ; "
   },
   "repository": {
     "type": "git",
