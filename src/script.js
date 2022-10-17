@@ -28,7 +28,6 @@ function addMenu() {
         </div>
         <div class="mobile-nr">Reservation: +44 1234567890</div>
     </div>`
-    // <div class="main-content"></div>`
 
     return document.body.appendChild(mainDiv);
 };
