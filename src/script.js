@@ -68,3 +68,5 @@ document.querySelector('.menu-btn').addEventListener('click', () => {
 
 // 1. Lorem ipsum text for the other pages using different style.css
 // 2. Add contact us address, phone Number, email and google maps
+// 3. Fix the order now btn on the home page
+// 4. Add menu options
