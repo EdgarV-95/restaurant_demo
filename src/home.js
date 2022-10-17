@@ -13,5 +13,4 @@ export function homePage() {
     `;
 
     return document.body.appendChild(mainDiv)
-    // return document.querySelector('.main-content').appendChild(mainDiv);
 };

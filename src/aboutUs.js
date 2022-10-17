@@ -3,7 +3,7 @@ import './style.css';
 export function aboutUsPage() {
     const mainDiv = document.createElement('div');
     mainDiv.classList.add('main-content');
-    mainDiv.setAttribute('id', 'aboutUs');
+    mainDiv.setAttribute('id', 'aboutUsPage');
     mainDiv.innerHTML =
     `
     <p class="welcome-txt">This is who we are</p>
@@ -11,6 +11,5 @@ export function aboutUsPage() {
     <p class="bla-bla">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     `;
 
-    return document.body.appendChild(mainDiv)
-    // return document.querySelector('.main-content').appendChild(mainDiv);
+    return document.body.appendChild(mainDiv);
 }

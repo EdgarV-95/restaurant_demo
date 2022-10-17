@@ -2,9 +2,10 @@ import './style.css';
 
 export function menuPage() {
     const mainDiv = document.createElement('div');
-    mainDiv.setAttribute('id', 'content');
+    mainDiv.classList.add('main-content');
+    mainDiv.setAttribute('id', 'menuPage');
     mainDiv.innerHTML =
-    `I'm ALIVE`
+    `<p class="welcome-txt">I AM ALIVE LUL</p>`;
 
     return document.body.appendChild(mainDiv);
 }

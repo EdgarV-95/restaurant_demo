@@ -5,6 +5,9 @@ import logo from './assets/pngwing.com.png';
 import { homePage } from './home';
 import { aboutUsPage } from './aboutUs';
 import { menuPage } from './menu';
+import { deliveryPage } from './delivery';
+import { blogPage } from './blog';
+import { contactPage } from './contact';
 
 // Adds menu and clears main-content
 function addMenu() {
@@ -31,10 +34,11 @@ function addMenu() {
 };
 
 function emptyMainContent() {
-    document.querySelector('.main-content').innerHTML = '';
+    let mainContentAll = document.querySelectorAll('.main-content');
+    document.querySelector('body').removeChild(mainContentAll[mainContentAll.length-1]);
 }
 
-// Creates the main page
+// Creates the navbar menu and home page
 addMenu();
 homePage();
 
@@ -47,28 +51,26 @@ const blog = document.querySelector('.blog');
 const contact = document.querySelector('.contact');
 
 home.addEventListener('click', () => {
-    // addMenu();
     emptyMainContent();
     homePage();
 });
 aboutUs.addEventListener('click', () => {
-    // addMenu();
     emptyMainContent();
     aboutUsPage();
 });
 menu.addEventListener('click', () => {
-    addMenu();
-    // emptyMainContent();
+    emptyMainContent();
     menuPage();
 });
 delivery.addEventListener('click', () => {
-    let test = document.querySelectorAll('.main-content');
-    let newarr = Array.from(test);
-    console.log(newarr.length)
-    console.log(newarr[newarr.length])})
-    // console.log(newarr[newarr.length])});
-
-
-// deliveryPage);
-// blog.addEventListener('click', blogPage);
-// contact.addEventListener('click', contactPage);
+    emptyMainContent();
+    deliveryPage();
+});
+blog.addEventListener('click', () => {
+    emptyMainContent();
+    blogPage();
+});
+contact.addEventListener('click', () => {
+    emptyMainContent();
+    contactPage();
+});
