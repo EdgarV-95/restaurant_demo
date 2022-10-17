@@ -9,7 +9,7 @@ import { deliveryPage } from './delivery';
 import { blogPage } from './blog';
 import { contactPage } from './contact';
 
-// Adds menu and clears main-content
+// Creates navbar menu
 function addMenu() {
     const mainDiv = document.createElement('div');
     mainDiv.setAttribute('id', 'content');
@@ -32,12 +32,13 @@ function addMenu() {
     return document.body.appendChild(mainDiv);
 };
 
+// Removes .main-content
 function emptyMainContent() {
     let mainContentAll = document.querySelectorAll('.main-content');
     document.querySelector('body').removeChild(mainContentAll[mainContentAll.length-1]);
 }
 
-// Creates the navbar menu and home page
+// Creates the navbar menu and adds home page
 addMenu();
 homePage();
 
