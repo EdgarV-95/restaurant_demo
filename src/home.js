@@ -1,5 +1,3 @@
-import './style.css';
-
 export function homePage() {
     const mainDiv = document.createElement('div');
     mainDiv.classList.add('main-content');

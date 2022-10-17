@@ -61,5 +61,10 @@ contact.addEventListener('click', () => {
     contactPage();
 });
 
+document.querySelector('.menu-btn').addEventListener('click', () => {
+    emptyMainContent()
+    menuPage()
+})
+
 // 1. Lorem ipsum text for the other pages using different style.css
 // 2. Add contact us address, phone Number, email and google maps
