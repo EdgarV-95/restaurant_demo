@@ -5,8 +5,6 @@ import logo from './assets/pngwing.com.png';
 import { homePage } from './home';
 import { aboutUsPage } from './aboutUs';
 import { menuPage } from './menu';
-import { deliveryPage } from './delivery';
-import { blogPage } from './blog';
 import { contactPage } from './contact';
 
 // Creates navbar menu
@@ -22,8 +20,6 @@ function addMenu() {
             <div class="home">HOME</div>
             <div class="aboutUs">ABOUT US</div>
             <div class="menu">MENU</div>
-            <div class="delivery">DELIVERY</div>
-            <div class="blog">BLOG</div>
             <div class="contact">CONTACT</div>
         </div>
         <div class="mobile-nr">Reservation: +44 1234567890</div>
@@ -46,8 +42,6 @@ homePage();
 const home = document.querySelector('.home');
 const aboutUs = document.querySelector('.aboutUs');
 const menu = document.querySelector('.menu');
-const delivery = document.querySelector('.delivery');
-const blog = document.querySelector('.blog');
 const contact = document.querySelector('.contact');
 
 home.addEventListener('click', () => {
@@ -62,15 +56,10 @@ menu.addEventListener('click', () => {
     emptyMainContent();
     menuPage();
 });
-delivery.addEventListener('click', () => {
-    emptyMainContent();
-    deliveryPage();
-});
-blog.addEventListener('click', () => {
-    emptyMainContent();
-    blogPage();
-});
 contact.addEventListener('click', () => {
     emptyMainContent();
     contactPage();
 });
+
+// 1. Lorem ipsum text for the other pages using different style.css
+// 2. Add contact us address, phone Number, email and google maps
