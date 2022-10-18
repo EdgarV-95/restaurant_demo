@@ -1,4 +1,5 @@
 export function aboutUsPage() {
+    document.querySelector('.aboutUs').style.borderBottom = '2px solid black';
     const mainDiv = document.createElement('div');
     mainDiv.classList.add('main-content');
     mainDiv.setAttribute('id', 'aboutUsPage');

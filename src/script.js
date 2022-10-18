@@ -17,10 +17,10 @@ function addMenu() {
     </div>
     <div class="navbar">
         <div class="menu-bar">
-            <div class="home">HOME</div>
-            <div class="aboutUs">ABOUT US</div>
-            <div class="menu">MENU</div>
-            <div class="contact">CONTACT</div>
+            <div class="home test">HOME</div>
+            <div class="aboutUs test">ABOUT US</div>
+            <div class="menu test">MENU</div>
+            <div class="contact test">CONTACT</div>
         </div>
         <div class="mobile-nr">Reservation: +44 1234567890</div>
     </div>`
@@ -32,6 +32,7 @@ function addMenu() {
 function emptyMainContent() {
     let mainContentAll = document.querySelectorAll('.main-content');
     document.querySelector('body').removeChild(mainContentAll[mainContentAll.length-1]);
+    document.querySelectorAll('.test').forEach(el => el.style.borderBottom = 'none');
 }
 
 // Creates the navbar menu and adds home page
