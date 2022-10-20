@@ -11,5 +11,6 @@ export function homePage() {
     <button class="menu-btn">Order Now</button>
     `;
 
+    console.log('test');
     return document.body.appendChild(mainDiv)
 };
