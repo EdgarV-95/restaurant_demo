@@ -1,5 +1,5 @@
-export function contactPage() {
-    document.querySelector('.contact').style.borderBottom = '2px solid black';
+export const contactPage = (() => {
+    // document.querySelector('.contact').style.borderBottom = '2px solid black';
     const mainDiv = document.createElement('div');
     mainDiv.classList.add('main-content');
     mainDiv.setAttribute('id', 'contactPage');
@@ -8,5 +8,5 @@ export function contactPage() {
     <button class="menu-btn">Contact</button>
     `;
 
-    return document.body.appendChild(mainDiv)
-};
+    document.body.appendChild(mainDiv)
+})();

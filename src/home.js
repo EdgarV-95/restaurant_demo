@@ -1,5 +1,5 @@
-export function homePage() {
-    document.querySelector('.home').style.borderBottom = '2px solid black';
+export const homePage = (() => {
+    // document.querySelector('.home').style.borderBottom = '2px solid black';
     const mainDiv = document.createElement('div');
     mainDiv.classList.add('main-content');
     mainDiv.setAttribute('id', 'homePage');
@@ -11,6 +11,5 @@ export function homePage() {
     <button class="menu-btn">Order Now</button>
     `;
 
-    console.log('test');
-    return document.body.appendChild(mainDiv)
-};
+    document.body.appendChild(mainDiv)
+})();
