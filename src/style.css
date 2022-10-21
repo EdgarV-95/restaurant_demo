@@ -3,10 +3,6 @@
     padding: 0;
 }
 
-.active-menu {
-    border-bottom: 2px solid black;
-}
-
 body {
     background-image: url(./assets/mainbg.jpg);
     background-repeat: no-repeat;
@@ -27,6 +23,10 @@ body {
 }
 
 /* NAVBAR */
+
+.active-menu {
+    border-bottom: 2px solid black;
+}
 
 .navbar {
     display: flex;
@@ -70,6 +70,17 @@ body {
     border-radius: 4vw;
     padding: 1vh;
     font-weight: bold;
+}
+
+.about-txt {
+    padding-left: 25vw;
+    padding-right: 25vw;
+}
+
+.about-txt > p, .about-title {
+    background-color: rgb(218, 165, 32, .6);
+    padding: 2.5vh;
+    border-radius: 4vw;
 }
 
 .menu-btn {
