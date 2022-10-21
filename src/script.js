@@ -30,7 +30,3 @@ tabs.forEach((tab) => {
 document.querySelector(".menu-btn").addEventListener("click", () => {
     document.querySelector(`[data-tab-target="#menu"]`).classList.add("active-menu");
   });
-
-document.querySelector('.test-btn').addEventListener('click', () => {
-  console.log('fasz')
-})

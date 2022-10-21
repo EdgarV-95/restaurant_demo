@@ -106,7 +106,7 @@ body {
 /* MENU PAGE */
 
 .menu-content {
-    background-color: rgb(128, 128, 128, .8);
+    background-color: rgb(128, 128, 128, .4);
     padding: 2.5vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -117,7 +117,7 @@ body {
 }
 
 .menu-item {
-    background-color: rgb(121, 112, 112);
+    background-color: rgb(218, 165, 32, .6);
     display: flex;
     gap: 2vh;
     margin-bottom: 5vh;
@@ -126,6 +126,7 @@ body {
 .food {
     width: 25vw;
     height: 25vh;
+    cursor: pointer;
 }
 
 .food-div {
@@ -133,4 +134,34 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1vw;
+}
+
+/* CONTACT US PAGE */
+
+.contact-content {
+    background-color: rgb(128, 128, 128, .4);
+    display: flex;
+    gap: 5vw;
+}
+
+.contact-info {
+    padding: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 5vh;
+    font-size: 3vh;
+    font-weight: bold;
+}
+
+.contact-info > p {
+    background-color: rgb(218, 165, 32, .6);
+    border-radius: 4vw;
+    padding: 3vh;
+    cursor: pointer;
+}
+
+iframe {
+    padding: 10vh;
 }
