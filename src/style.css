@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+.active-menu {
+    border-bottom: 2px solid black;
+}
+
 body {
     background-image: url(./assets/mainbg.jpg);
     background-repeat: no-repeat;
@@ -39,14 +43,6 @@ body {
     gap: 2.5vw;
 }
 
-.home, .aboutUs, .menu, .delivery, .blog, .contact {
-    cursor: pointer;
-}
-
-.home:hover, .aboutUs:hover, .menu:hover, .delivery:hover, .blog:hover, .contact:hover {
-    border-bottom: 2px solid black;
-}
-
 .mobile-nr {
     border: 8px solid black;
     padding: 1vh;
@@ -55,7 +51,7 @@ body {
 
 /* MAIN CONTENT */
 
-.main-content {
+.active-content[data-tab-content] {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,8 +61,12 @@ body {
     font-size: 3vh;
 }
 
+[data-tab-content] {
+    display: none;
+}
+
 .welcome-txt, .main-txt, .bla-bla {
-    background-color: goldenrod;
+    background-color: rgb(218, 165, 32, .6);
     border-radius: 4vw;
     padding: 1vh;
     font-weight: bold;

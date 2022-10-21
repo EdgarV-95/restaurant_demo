@@ -1,12 +1,9 @@
-export function contactPage() {
-    document.querySelector('.contact').style.borderBottom = '2px solid black';
-    const mainDiv = document.createElement('div');
-    mainDiv.classList.add('main-content');
-    mainDiv.setAttribute('id', 'contactPage');
-    mainDiv.innerHTML =
-    `
-    <button class="menu-btn">Contact</button>
-    `;
+export const contactPage = (() => {
+    const contact = document.createElement('div');
+    contact.setAttribute("id", "contact");
+    contact.setAttribute("data-tab-content", "");
+    contact.innerHTML =
+    `<button class="menu-btn test-btn">Contact</button>`;
 
-    return document.body.appendChild(mainDiv)
-};
+    document.body.appendChild(contact)
+})();
