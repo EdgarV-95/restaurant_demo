@@ -102,3 +102,35 @@ body {
     border: none;
     cursor: pointer;
 }
+
+/* MENU PAGE */
+
+.menu-content {
+    background-color: rgb(128, 128, 128, .8);
+    padding: 2.5vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    gap: 2.5vw;
+}
+
+.menu-item {
+    background-color: rgb(121, 112, 112);
+    display: flex;
+    gap: 2vh;
+    margin-bottom: 5vh;
+}
+
+.food {
+    width: 25vw;
+    height: 25vh;
+}
+
+.food-div {
+    padding-top: 3vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
