@@ -1,10 +1,9 @@
-export function menuPage() {
-    document.querySelector('.menu').style.borderBottom = '2px solid black';
-    const mainDiv = document.createElement('div');
-    mainDiv.classList.add('main-content');
-    mainDiv.setAttribute('id', 'menuPage');
-    mainDiv.innerHTML =
+export const menuPage = (() => {
+    const menu = document.createElement('div');
+    menu.setAttribute("id", "menu");
+    menu.setAttribute("data-tab-content", "");
+    menu.innerHTML =
     `<p class="welcome-txt">Our Menu: </p>`;
 
-    return document.body.appendChild(mainDiv);
-}
+    document.body.appendChild(menu)
+})();

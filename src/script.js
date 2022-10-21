@@ -3,29 +3,34 @@ import './style.css';
 
 import { addMenu } from './navbar';
 import { homePage } from './home';
-// import { aboutUsPage } from './aboutUs';
-// import { menuPage } from './menu';
+import { aboutUsPage } from './aboutUs';
+import { menuPage } from './menu';
 import { contactPage } from './contact';
 
 const tabs = document.querySelectorAll("[data-tab-target]");
 const tabContents = document.querySelectorAll("[data-tab-content]");
 
 // Navigation tabs
-tabs.forEach((tab) =>
+tabs.forEach((tab) => {
+  tab.style.cursor = "pointer";
   tab.addEventListener("click", () => {
     const target = document.querySelector(tab.dataset.tabTarget);
     tabContents.forEach((tabContent) => {
-      tabContent.classList.remove("active");
+      tabContent.classList.remove("active-content");
     });
     tabs.forEach((tab) => {
-      tab.classList.remove("red");
+      tab.classList.remove("active-menu");
     });
-    tab.classList.add("red");
-    target.classList.add("active");
+    tab.classList.add("active-menu");
+    target.classList.add("active-content");
   })
-);
+});
 
 //Makes sure that menu navigation tab is colored after clicking button
 document.querySelector(".menu-btn").addEventListener("click", () => {
-    document.querySelector(`[data-tab-target="#contact"]`).classList.add("red");
+    document.querySelector(`[data-tab-target="#menu"]`).classList.add("active-menu");
   });
+
+document.querySelector('.test-btn').addEventListener('click', () => {
+  console.log('fasz')
+})
