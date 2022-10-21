@@ -107,6 +107,7 @@ body {
 
 .menu-content {
     background-color: rgb(128, 128, 128, .4);
+    border-radius: 4vw;
     padding: 2.5vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -118,12 +119,14 @@ body {
 
 .menu-item {
     background-color: rgb(218, 165, 32, .6);
+    border-radius: 4vw;
     display: flex;
     gap: 2vh;
     margin-bottom: 5vh;
 }
 
 .food {
+    border-radius: 4vw;
     width: 25vw;
     height: 25vh;
     cursor: pointer;
@@ -140,6 +143,7 @@ body {
 
 .contact-content {
     background-color: rgb(128, 128, 128, .4);
+    border-radius: 4vw;
     display: flex;
     gap: 5vw;
 }
@@ -163,5 +167,6 @@ body {
 }
 
 iframe {
-    padding: 10vh;
+    padding: 5vh;
+    border-radius: 4vw;
 }
