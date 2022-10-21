@@ -14,7 +14,8 @@ export const addMenu = (() => {
             <div data-tab-target="#contact" class="tab">CONTACT</div>
         </div>
         <div class="mobile-nr">Reservation: +44 1234567890</div>
-    </div>`
+    </div>
+    <div class="distinction-line"></div>`
 
     document.body.appendChild(header);
 })();

@@ -24,6 +24,13 @@ body {
 
 /* NAVBAR */
 
+.distinction-line {
+    border-bottom: 2px solid gray;
+    padding-bottom: 4.5vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
 .active-menu {
     border-bottom: 2px solid black;
 }
@@ -58,7 +65,6 @@ body {
     flex-direction: column;
     gap: 4.5vh;
     padding-top: 12vh;
-    font-size: 3vh;
 }
 
 [data-tab-content] {
@@ -70,6 +76,7 @@ body {
     border-radius: 4vw;
     padding: 1vh;
     font-weight: bold;
+    font-size: 3vh;
 }
 
 .about-txt {
@@ -81,6 +88,7 @@ body {
     background-color: rgb(218, 165, 32, .6);
     padding: 2.5vh;
     border-radius: 4vw;
+    font-size: 2vh;
 }
 
 .menu-btn {
