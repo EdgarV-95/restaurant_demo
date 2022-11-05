@@ -1,9 +1,8 @@
 import logo from './assets/pngwing.com.png';
 
-export const addMenu = (() => {
-    const header = document.createElement('header');
-    header.innerHTML =
-    `<div class="logo">
+export const addMenu = () => {
+  const header = document.createElement('header');
+  header.innerHTML = `<div class="logo">
         <img class="icon" src="${logo}">
     </div>
     <div class="navbar">
@@ -15,7 +14,7 @@ export const addMenu = (() => {
         </div>
         <div class="mobile-nr">Reservation: +44 1234567890</div>
     </div>
-    <div class="distinction-line"></div>`
+    <div class="distinction-line"></div>`;
 
-    document.body.appendChild(header);
-})();
+  document.body.appendChild(header);
+};

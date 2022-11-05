@@ -1,9 +1,8 @@
-export const contactPage = (() => {
-    const contact = document.createElement('div');
-    contact.setAttribute("id", "contact");
-    contact.setAttribute("data-tab-content", "");
-    contact.innerHTML =
-    `<div class="contact-content">
+export const contactPage = () => {
+  const contact = document.createElement('div');
+  contact.setAttribute('id', 'contact');
+  contact.setAttribute('data-tab-content', '');
+  contact.innerHTML = `<div class="contact-content">
         <div class="contact-info">
             <p>Address: 148 Chesterton Rd, Cambridge CB4 1JB</p>
             <p>Phone: +44 1234567890</p>
@@ -23,5 +22,5 @@ export const contactPage = (() => {
         </div>
     </div>`;
 
-    document.body.appendChild(contact)
-})();
+  document.body.appendChild(contact);
+};

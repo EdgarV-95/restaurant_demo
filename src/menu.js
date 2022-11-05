@@ -3,12 +3,11 @@ import food2 from './assets/pizza1.jpg';
 import food3 from './assets/filipino.jpg';
 import food4 from './assets/soup.jpg';
 
-export const menuPage = (() => {
-    const menu = document.createElement('div');
-    menu.setAttribute("id", "menu");
-    menu.setAttribute("data-tab-content", "");
-    menu.innerHTML =
-    `<div class="menu-content">
+export const menuPage = () => {
+  const menu = document.createElement('div');
+  menu.setAttribute('id', 'menu');
+  menu.setAttribute('data-tab-content', '');
+  menu.innerHTML = `<div class="menu-content">
         <div class="menu-item">
             <img class="food" src="${food1}">
             <div class="food-div">
@@ -42,5 +41,5 @@ export const menuPage = (() => {
         </div>
     </div>`;
 
-    document.body.appendChild(menu)
-})();
+  document.body.appendChild(menu);
+};
